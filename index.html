@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poruszający się napis z confetti</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Dodaj confetti-js z CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.17/dist/index.min.js"></script>
+    <!-- Dodaj Toastify-js z CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<body>
+    <!-- Canvas dla confetti -->
+    <canvas id="confetti-canvas" style="background: url('./grzalnia.jpg'); background-size: 100% 100%;"></canvas>
+    
+    <div id="container">
+        <span id="movingText">Słabo rucham</span>
+        <span id="rotatingText">Kocham kutasy</span>
+        <img id="randomImage" src="./cieply.jpg" alt="Losowy obraz">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Dodano aby ukryć ewentualne przewijanie */
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#rotatingText {
+    position: absolute;
+    font-size: 54px;
+    color: #ffffff;
+}
+
+#movingText {
+    position: absolute;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#randomImage {
+    position: absolute;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+/* Canvas confetti */
+#confetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Ustawiamy poniżej innych elementów */
+}
